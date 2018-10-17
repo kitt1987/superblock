@@ -21,5 +21,5 @@ func main() {
 
 	fmt.Printf("%#v\n", sb)
 	fmt.Println("Total size:", uint64(sb.SB_blocksize) * uint64(sb.SB_dblocks))
-	fmt.Println("Total size:", uint64(sb.SB_blocksize) * uint64(sb.SB_fdblocks))
+	fmt.Println("Free size:", uint64(sb.SB_blocksize) * uint64(sb.SB_fdblocks))
 }
